@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: lightBlue;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.compito.MovimentiController">
+   <children>
+      <Text layoutX="263.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOVIMENTI">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Text>
+      <Button layoutX="78.0" layoutY="130.0" mnemonicParsing="false" onAction="#ultimi_5" text="Ultimi 5 mov.">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="277.0" layoutY="130.0" mnemonicParsing="false" onAction="#ultimi_7giorni" text="Ultimi 7 giorni">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="484.0" layoutY="130.0" mnemonicParsing="false" onAction="#ultimi_30giorni" text="Ultimi 30 giorni">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="720.0" layoutY="130.0" mnemonicParsing="false" onAction="#tutti" text="TUTTI">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="405.0" layoutY="518.0" mnemonicParsing="false" onAction="#esci" text="Esci">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="fild" editable="false" layoutX="53.0" layoutY="211.0" prefHeight="286.0" prefWidth="790.0" text="&#10;" wrapText="true">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" />
+               </color>
+            </InnerShadow>
+         </effect></TextArea>
+   </children>
+</AnchorPane>
